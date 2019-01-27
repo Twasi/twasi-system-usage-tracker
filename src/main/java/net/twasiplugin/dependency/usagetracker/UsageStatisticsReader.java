@@ -1,8 +1,8 @@
-package net.twasiplugin.usagetracker;
+package net.twasiplugin.dependency.usagetracker;
 
-import net.twasiplugin.usagetracker.database.UsageStatisticsEntity;
-import net.twasiplugin.usagetracker.models.CPUStatistic;
-import net.twasiplugin.usagetracker.models.RamStatistic;
+import net.twasiplugin.dependency.usagetracker.models.CPUStatistic;
+import net.twasiplugin.dependency.usagetracker.models.RamStatistic;
+import net.twasiplugin.dependency.usagetracker.database.UsageStatisticsEntity;
 import oshi.SystemInfo;
 import oshi.hardware.CentralProcessor;
 import oshi.util.Util;

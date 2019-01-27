@@ -1,4 +1,4 @@
-package net.twasiplugin.usagetracker.models;
+package net.twasiplugin.dependency.usagetracker.models;
 
 import static oshi.util.FormatUtil.formatBytes;
 
