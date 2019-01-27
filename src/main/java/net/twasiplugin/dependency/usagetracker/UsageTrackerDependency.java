@@ -83,8 +83,8 @@ public class UsageTrackerDependency extends TwasiDependency {
         b.appendln("CPU:")
                 .appendln("\t%d - Total Cores", cpu.getTotalCores())
                 .appendln("\t%d - Total Threads", cpu.getTotalThreads())
-                .appendln("\t%s - CPU-load", String.format("%.2f", cpu.getTotalCPULoad()))
-                .appendln("\t%s - Average Core-load", String.format("%.2f", cpu.getAvgCoreLoad()))
+                .appendln("\t%s - CPU-load", cpu.getFormattedTotalCPULoad())
+                .appendln("\t%s - Average Core-load", cpu.getFormattedAvgCoreLoad())
                 .appendln("\t%s - Max CPU-frequency", cpu.getFormattedMaxCPUFreq());
         b.appendln(spacer + "\n\n");
         return b.toString();
