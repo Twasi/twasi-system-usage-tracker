@@ -1,8 +1,8 @@
 package net.twasiplugin.dependency.usagetracker;
 
+import net.twasiplugin.dependency.usagetracker.database.UsageStatisticsEntity;
 import net.twasiplugin.dependency.usagetracker.models.CPUStatistic;
 import net.twasiplugin.dependency.usagetracker.models.RamStatistic;
-import net.twasiplugin.dependency.usagetracker.database.UsageStatisticsEntity;
 import oshi.SystemInfo;
 import oshi.hardware.CentralProcessor;
 import oshi.util.Util;
@@ -15,7 +15,10 @@ import static java.lang.Runtime.getRuntime;
 public class UsageStatisticsReader {
 
     public static UsageStatisticsEntity buildEntity() {
-        Date timestamp = Calendar.getInstance().getTime();
+        return buildEntity(Calendar.getInstance().getTime());
+    }
+
+    public static UsageStatisticsEntity buildEntity(Date timestamp) {
         SystemInfo info = new SystemInfo();
 
         RamStatistic ram = getRam(info);
