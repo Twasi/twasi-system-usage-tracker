@@ -1,4 +1,4 @@
-package net.twasiplugin.usagetracker.database;
+package net.twasiplugin.dependency.usagetracker.database;
 
 import net.twasi.core.database.lib.Repository;
 

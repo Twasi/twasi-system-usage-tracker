@@ -1,8 +1,8 @@
-package net.twasiplugin.usagetracker.database;
+package net.twasiplugin.dependency.usagetracker.database;
 
 import net.twasi.core.database.models.BaseEntity;
-import net.twasiplugin.usagetracker.models.CPUStatistic;
-import net.twasiplugin.usagetracker.models.RamStatistic;
+import net.twasiplugin.dependency.usagetracker.models.CPUStatistic;
+import net.twasiplugin.dependency.usagetracker.models.RamStatistic;
 import org.mongodb.morphia.annotations.Entity;
 
 import java.util.Date;

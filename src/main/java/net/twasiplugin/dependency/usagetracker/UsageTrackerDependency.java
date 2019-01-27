@@ -1,14 +1,14 @@
-package net.twasiplugin.usagetracker;
+package net.twasiplugin.dependency.usagetracker;
 
 import net.twasi.core.logger.TwasiLogger;
 import net.twasi.core.plugin.TwasiDependency;
 import net.twasi.core.services.ServiceRegistry;
 import net.twasi.core.services.providers.DataService;
 import net.twasi.core.services.providers.TelegramService;
-import net.twasiplugin.usagetracker.database.UsageStatisticsEntity;
-import net.twasiplugin.usagetracker.database.UsageStatisticsRepository;
-import net.twasiplugin.usagetracker.models.CPUStatistic;
-import net.twasiplugin.usagetracker.models.RamStatistic;
+import net.twasiplugin.dependency.usagetracker.database.UsageStatisticsEntity;
+import net.twasiplugin.dependency.usagetracker.database.UsageStatisticsRepository;
+import net.twasiplugin.dependency.usagetracker.models.CPUStatistic;
+import net.twasiplugin.dependency.usagetracker.models.RamStatistic;
 import org.apache.commons.lang3.text.StrBuilder;
 import org.telegram.telegrambots.meta.api.objects.Message;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;

@@ -1,0 +1,9 @@
+name: message-logger
+main: net.twasiplugin.dependency.usagetracker.UsageTrackerDependency
+author: Twasi Team
+description: Tracks system usage information for statistics
+version: 1.0
+
+dependency: true
+
+commands:
